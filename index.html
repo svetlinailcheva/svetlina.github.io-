@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header & Navigation Layout -->
+    <header class="site-header">
+        <div class="brand-name">
+            <a href="#">YOUR NAME</a>
+        </div>
+        
+        <nav class="site-nav">
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                
+                <!-- Minimalist Portfolio Dropdown Menu -->
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Portfolio ▾</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#cv">CV</a></li>
+                        
+                        <!-- Projects Sub-Menu -->
+                        <li class="nested-dropdown">
+                            <a href="javascript:void(0)" class="nested-btn">Projects ▸</a>
+                            <ul class="nested-content">
+                                <li><a href="#projects-2026">2026</a></li>
+                                <li><a href="#projects-2025">2025</a></li>
+                                <li><a href="#projects-2024">2024</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+        
+        <!-- About Section -->
+        <section id="about">
+            <p class="description-text">
+                Welcome. This is a collection of selected drawings, objects, and digital archives. 
+                Use the navigation menu to sort through project documentations by year.
+            </p>
+        </section>
+
+        <!-- 2026 Projects -->
+        <section id="projects-2026" class="project-section">
+            <h2 class="section-title">2026 Projects</h2>
+            <div class="artwork-item">
+                <h3 class="artwork-title">Project Title A</h3>
+                <p class="artwork-meta">Medium, Dimensions, 2026.</p>
+                
+                <div class="image-wrapper">
+                    <!-- This is where your photo will go later -->
+                    <img src="images/project1.jpg" alt="Artwork Photo" class="archive-img">
+                </div>
+                
+                <p class="artwork-description">Detailed notes about your concepts and creation history go here.</p>
+                <a href="files/document.pdf" download class="file-link">→ Download Project Documentation (PDF)</a>
+            </div>
+        </section>
+
+        <!-- 2025 Projects (Video Support Example) -->
+        <section id="projects-2025" class="project-section">
+            <h2 class="section-title">2025 Projects</h2>
+            <div class="artwork-item">
+                <h3 class="artwork-title">Project Title B</h3>
+                <p class="artwork-meta">Video Installation, Loop, 2025.</p>
+                
+                <div class="video-wrapper">
+                    <iframe src="https://youtube.com" frameborder="0" allowfullscreen></iframe>
+                </div>
+                
+                <p class="artwork-description">Description text highlighting the audio-visual components of the project.</p>
+            </div>
+        </section>
+
+        <!-- CV Section -->
+        <section id="cv" class="project-section">
+            <h2 class="section-title">Bio & CV</h2>
+            <div class="cv-block">
+                <h3>Education</h3>
+                <p>2024 — 2026 | University Name, Degree Track</p>
+                
+                <h3>Selected Exhibitions / Works</h3>
+                <p>2025 | Group Exhibition Title, Gallery Space</p>
+                
+                <a href="files/my-cv.pdf" download class="file-link">→ Download Full Curriculum Vitae</a>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="project-section">
+            <h2 class="section-title">Contact</h2>
+            <p>For inquiries or studio visits, please reach out via email:</p>
+            <p><a href="mailto:youremail@domain.com" class="email-link">youremail@domain.com</a></p>
+        </section>
+
+    </main>
