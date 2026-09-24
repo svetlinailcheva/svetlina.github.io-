@@ -1,0 +1,211 @@
+/* Core Styling Rules matching Fine Art Portfolios */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+    background-color: #ffffff;
+    color: #111111;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+}
+
+/* Elegant Text Resets */
+a {
+    color: #111111;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+}
+a:hover {
+    opacity: 0.5;
+}
+
+/* Header & Typography Layout */
+.site-header {
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.brand-name a {
+    font-size: 24px;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+/* Nav Menu Lists */
+.site-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links > li > a {
+    font-size: 16px;
+    text-transform: lowercase;
+}
+
+/* Pure CSS Dropdown Mechanics */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffffff;
+    border: 1px solid #eeeeee;
+    min-width: 140px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    padding: 10px 0;
+    z-index: 100;
+}
+
+.dropdown-content li a {
+    padding: 8px 20px;
+    display: block;
+    font-size: 15px;
+    text-transform: lowercase;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Nested Projects-by-Year Sidebar Popout */
+.nested-dropdown {
+    position: relative;
+}
+
+.nested-content {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: -10px;
+    background-color: #ffffff;
+    border: 1px solid #eeeeee;
+    min-width: 100px;
+    padding: 10px 0;
+}
+
+.nested-dropdown:hover .nested-content {
+    display: block;
+}
+
+/* Main Minimal Content Viewports */
+.main-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 40px 100px 40px;
+}
+
+.description-text {
+    font-style: italic;
+    font-size: 18px;
+    color: #555555;
+    margin-bottom: 60px;
+}
+
+.project-section {
+    padding: 60px 0;
+    border-top: 1px solid #f0f0f0;
+}
+
+.section-title {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: #999999;
+    margin-bottom: 30px;
+    font-weight: normal;
+}
+
+/* Individual Archive Items */
+.artwork-item {
+    margin-bottom: 40px;
+}
+
+.artwork-title {
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+.artwork-meta {
+    font-size: 14px;
+    color: #666666;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+/* Image & Media Containers */
+.image-wrapper {
+    background-color: #fafafa;
+    padding: 20px 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.archive-img {
+    max-width: 100%;
+    max-height: 70vh;
+    height: auto;
+    display: inline-block;
+}
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    margin-bottom: 20px;
+    background: #000;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.artwork-description {
+    font-size: 16px;
+    color: #333333;
+    max-width: 650px;
+}
+
+.file-link {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 14px;
+    border-bottom: 1px solid #111111;
+}
+
+/* CV Layout Adjustments */
+.cv-block h3 {
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-top: 30px;
+}
+
+.email-link {
+    font-size: 18px;
+    border-bottom: 1px solid #111111;
+}
